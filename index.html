@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop</title>
+
+  <!-- Fonts -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Shop</div>
+  <ul class="nav-links">
+    <li><a href="#cards">Cards</a></li>
+    <li><a href="#logs">Logs</a></li>
+    <li><a href="#accounts">Accounts</a></li>
+    <li><a href="#purchase">Purchase</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <div class="hero-badge">&#9679; Crypto Only</div>
+  <h1>The <span>Shop</span></h1>
+  <p>Cards, logs & accounts. Pay with BTC, ETH, or LTC and receive your items fast.</p>
+</div>
+
+<main>
+
+  <div class="card" id="cards">
+    <div class="card-header">
+      <div>
+        <div class="card-label">Section 01</div>
+        <div class="card-title">Cards</div>
+        <div class="card-desc">Gift card logs for various brands</div>
+      </div>
+      <div class="price-group">
+        <div class="price-tag">$15</div>
+        <div class="crypto-row">
+          <span class="cpill btc">BTC</span>
+          <span class="cpill eth">ETH</span>
+          <span class="cpill ltc">LTC</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" id="logs">
+    <div class="card-header">
+      <div>
+        <div class="card-label">Section 02</div>
+        <div class="card-title">Logs</div>
+        <div class="card-desc">Select a store to see pricing</div>
+      </div>
+    </div>
+
+    <div class="tabs-wrap" id="tabsWrap"></div>
+
+    <div class="log-panel">
+      <div>
+        <div class="log-name" id="logName">Subway</div>
+        <div class="log-sub" id="logSub">Various balances available</div>
+      </div>
+      <div class="log-right">
+        <div class="log-price" id="logPrice">$5 – $15</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" id="accounts">
+    <div class="card-header">
+      <div>
+        <div class="card-label">Section 03</div>
+        <div class="card-title">Accounts</div>
+        <div class="card-desc">Priced per line</div>
+      </div>
+      <div class="price-group">
+        <div class="price-tag">$5 / line</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" id="purchase">
+    <div class="wallet-list">
+      <div class="wallet-item">
+        <span class="wallet-coin btc">BTC</span>
+        <span class="wallet-addr">bc1qzr7drps88flc2dtpld6u3hlwrpx9r6fgmhaakq</span>
+        <button class="copy-btn" onclick="copyAddr(this,'bc1qzr7drps88flc2dtpld6u3hlwrpx9r6fgmhaakq')">Copy</button>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  All sales are final · Crypto payments only
+</footer>
+
+<!-- External JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
