@@ -4,15 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shop</title>
-
-  <!-- Fonts -->
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
-  <!-- External CSS -->
+  <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -35,9 +33,10 @@
 
 <main>
 
+  <!-- CARDS -->
   <div class="card" id="cards">
     <div class="card-header">
-      <div>
+      <div class="card-title-group">
         <div class="card-label">Section 01</div>
         <div class="card-title">Cards</div>
         <div class="card-desc">Gift card logs for various brands</div>
@@ -53,9 +52,10 @@
     </div>
   </div>
 
+  <!-- LOGS -->
   <div class="card" id="logs">
     <div class="card-header">
-      <div>
+      <div class="card-title-group">
         <div class="card-label">Section 02</div>
         <div class="card-title">Logs</div>
         <div class="card-desc">Select a store to see pricing</div>
@@ -64,36 +64,87 @@
 
     <div class="tabs-wrap" id="tabsWrap"></div>
 
-    <div class="log-panel">
+    <div class="log-panel" id="logPanel">
       <div>
         <div class="log-name" id="logName">Subway</div>
         <div class="log-sub" id="logSub">Various balances available</div>
       </div>
       <div class="log-right">
         <div class="log-price" id="logPrice">$5 – $15</div>
+        <div class="crypto-row">
+          <span class="cpill btc">BTC</span>
+          <span class="cpill eth">ETH</span>
+          <span class="cpill ltc">LTC</span>
+        </div>
       </div>
     </div>
   </div>
 
+  <!-- ACCOUNTS -->
   <div class="card" id="accounts">
     <div class="card-header">
-      <div>
+      <div class="card-title-group">
         <div class="card-label">Section 03</div>
         <div class="card-title">Accounts</div>
         <div class="card-desc">Priced per line</div>
       </div>
       <div class="price-group">
         <div class="price-tag">$5 / line</div>
+        <div class="crypto-row">
+          <span class="cpill btc">BTC</span>
+          <span class="cpill eth">ETH</span>
+          <span class="cpill ltc">LTC</span>
+        </div>
       </div>
     </div>
   </div>
 
+  <!-- PURCHASE -->
   <div class="card" id="purchase">
+    <div class="card-header">
+      <div class="card-title-group">
+        <div class="card-label">Section 04</div>
+        <div class="card-title">How to Purchase</div>
+        <div class="card-desc">Send crypto to one of the addresses below</div>
+      </div>
+    </div>
+
     <div class="wallet-list">
       <div class="wallet-item">
         <span class="wallet-coin btc">BTC</span>
         <span class="wallet-addr">bc1qzr7drps88flc2dtpld6u3hlwrpx9r6fgmhaakq</span>
         <button class="copy-btn" onclick="copyAddr(this,'bc1qzr7drps88flc2dtpld6u3hlwrpx9r6fgmhaakq')">Copy</button>
+      </div>
+      <div class="wallet-item">
+        <span class="wallet-coin eth">ETH</span>
+        <span class="wallet-addr">0x9881394f10046FDb43666323d6DD4Da61AF5B9AD</span>
+        <button class="copy-btn" onclick="copyAddr(this,'0x9881394f10046FDb43666323d6DD4Da61AF5B9AD')">Copy</button>
+      </div>
+      <div class="wallet-item">
+        <span class="wallet-coin ltc">LTC</span>
+        <span class="wallet-addr">ltc1qgcslper3uegjcs4uqga4w0hu6cn2lcaxhwzc04</span>
+        <button class="copy-btn" onclick="copyAddr(this,'ltc1qgcslper3uegjcs4uqga4w0hu6cn2lcaxhwzc04')">Copy</button>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-text">Send the exact amount in your chosen crypto to the wallet address above</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-text">Email your proof of payment to <a href="mailto:1nonlyN23@proton.me">1nonlyN23@proton.me</a></div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-text">Join the Discord — <a href="https://discord.gg/PtUnfhr9Ua" target="_blank">discord.gg/PtUnfhr9Ua</a> — open a ticket and send proof of payment there too, if item is OOS ( out of stock ) i will let you know and give you a log of choice or refund.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-text">Sit back and wait for your items to be delivered!</div>
       </div>
     </div>
   </div>
@@ -101,10 +152,10 @@
 </main>
 
 <footer>
-  All sales are final · Crypto payments only
+  All sales are final &nbsp;&middot;&nbsp; Crypto payments only
 </footer>
 
-<!-- External JS -->
+<!-- JS -->
 <script src="script.js"></script>
 
 </body>
